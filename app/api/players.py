@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 from typing import List
 from app.models.player import PlayerSummary, PaginatedPlayers
-from app.scrapers.player_scraper import scrape_player_list
+from app.scrapers.player_list_scraper import scrape_player_list
 
 router = APIRouter()
 
