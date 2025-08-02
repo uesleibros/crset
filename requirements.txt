@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+curl_cffi
+selectolax
+pydantic
