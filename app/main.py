@@ -1,4 +1,10 @@
+"""
+Main application entrypoint for the CRSet API built with FastAPI.
+Defines the FastAPI app and includes the players router.
+"""
+
 from fastapi import FastAPI
+
 from app.api import players
 
 app: FastAPI = FastAPI(title="CRSet API", version="0.1.0")

@@ -3,3 +3,8 @@ uvicorn[standard]
 curl_cffi
 selectolax
 pydantic
+pydantic-settings
+pylint
+black
+isort
+mypy
