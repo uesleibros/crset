@@ -5,11 +5,20 @@
 [![License](https://img.shields.io/github/license/uesleibros/crset?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/data-updated%20daily-brightgreen?style=flat-square)](#)
 [![Made with Python](https://img.shields.io/badge/made%20with-python-blue?style=flat-square&logo=python)](#)
-[![FastAPI](https://img.shields.io/badge/Framework-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Framework: FastAPI](https://img.shields.io/badge/Framework-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![OpenAPI Docs](https://img.shields.io/badge/docs-OpenAPI-6BA539?style=flat-square&logo=openapiinitiative)](#)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square&logo=pytest)](#)
 [![Coverage](https://img.shields.io/badge/coverage-95%25-success?style=flat-square)](#)
-[![OpenAPI](https://img.shields.io/badge/docs-openapi-6BA539?style=flat-square&logo=openapiinitiative)](#)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/uesleibros/crset/ci.yml?branch=main&style=flat-square)](https://github.com/uesleibros/crset/actions)
+[![Code Quality](https://img.shields.io/badge/code%20quality-A-green?style=flat-square&logo=codefactor)](#)
+[![Docker Ready](https://img.shields.io/badge/docker-wip-blue?style=flat-square&logo=docker)](#)
+[![Deployment: Uvicorn](https://img.shields.io/badge/deployment-uvicorn%20%2B%20ASGI-black?style=flat-square&logo=uvicorn)](#)
+[![Status](https://img.shields.io/badge/status-active-success?style=flat-square)](#)
+[![Maintenance](https://img.shields.io/badge/maintenance-maintained-green.svg?style=flat-square)](#)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-orange?style=flat-square)](https://github.com/uesleibros/crset/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github)](https://github.com/uesleibros/crset/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/uesleibros/crset?style=flat-square)](https://github.com/uesleibros/crset/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/uesleibros/crset?style=flat-square)](https://github.com/uesleibros/crset/network)
 
 **CRSet** is a high-performance, developer-focused football API built on top of real-time web scraping from [SoFIFA.com](https://sofifa.com).  
 It exposes structured, searchable football data through fast and predictable RESTful endpoints.
@@ -34,6 +43,29 @@ CRSet transforms raw HTML from SoFIFA into an accessible JSON-based API. It deli
 | Documentation   | OpenAPI / Swagger  |
 | Data Source     | [SoFIFA](https://sofifa.com) (scraped) |
 
+## Quick Start
+
+### Requirements
+
+- Python 3.11 or higher
+- `pip` or `poetry`
+
+### Installation
+
+```bash
+git clone https://github.com/uesleibros/crset.git
+cd crset
+pip install -r requirements.txt
+```
+
+### Run Locally
+
+```bash
+uvicorn crset.main:app --reload
+```
+
+Visit `http://127.0.0.1:8000/docs` to explore the API via OpenAPI.
+
 ## Use Cases
 
 - Data ingestion for sports analytics platforms
@@ -46,6 +78,8 @@ CRSet transforms raw HTML from SoFIFA into an accessible JSON-based API. It deli
 
 This project is **not affiliated with or endorsed** by SoFIFA, EA Sports, FIFA, or any related entity.
 All data is scraped from **publicly available** sources and is intended for **educational and non-commercial** use only.
+
+Use of this software for commercial applications may violate the terms of service of the source website.
 
 ## Contributing
 
@@ -63,7 +97,7 @@ Create your own fork via GitHub and clone it to your local machine.
 
 Use a descriptive name for your branch:
 
-```sh
+```bash
 git checkout -b feature/player-filter-by-age
 ```
 
@@ -80,7 +114,7 @@ git checkout -b feature/player-filter-by-age
 - Use `pytest` and ensure 95%+ test coverage is maintained.
 - Run the test suite locally before submitting:
   
-```sh
+```bash
 pytest --cov=crset
 ```
 
@@ -88,7 +122,7 @@ pytest --cov=crset
 
 Make sure your code passes linters and formatters:
 
-```sh
+```bash
 black . && isort . && flake8 .
 ```
 
