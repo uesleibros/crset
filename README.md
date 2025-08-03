@@ -24,6 +24,16 @@ CRSet transforms raw HTML from SoFIFA into an accessible JSON-based API. It deli
 - Clean, RESTful architecture
 - Built with Python and FastAPI
 
+
+| Component       | Technology         |
+|----------------|--------------------|
+| Language        | Python 3.11+       |
+| Web Framework   | FastAPI            |
+| HTTP Server     | Uvicorn (ASGI)     |
+| Testing         | Pytest             |
+| Documentation   | OpenAPI / Swagger  |
+| Data Source     | [SoFIFA](https://sofifa.com) (scraped) |
+
 ## Use Cases
 
 - Data ingestion for sports analytics platforms
