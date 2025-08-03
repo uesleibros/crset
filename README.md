@@ -1,3 +1,5 @@
+<img src="/assets/logo.png?width=100" alt="CRSet Logo" width="120" height="120" />
+
 # CRSet
 
 [![License](https://img.shields.io/github/license/uesleibros/crset?style=flat-square)](LICENSE)
