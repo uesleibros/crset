@@ -1,11 +1,11 @@
 """
-Module for application configuration using Pydantic BaseSettingsModel.
+Module for application configuration using Pydantic BaseSettings.
 """
 
-from pydantic_settings import BaseSettingsModel
+from pydantic_settings import BaseSettings
 
 
-class Settings(BaseSettingsModel):
+class Settings(BaseSettings):
     """
     Application settings loaded from environment variables or defaults.
     """
@@ -24,3 +24,4 @@ class Settings(BaseSettingsModel):
 
 # Global settings instance to be used across the app
 settings = Settings()
+
